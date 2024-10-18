@@ -1,0 +1,144 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - compliment_bot
+  - insult_bot
+  - ask_bot_opinion
+  - user_bored
+  - user_confused
+  - bot_challenge
+  - ask_sustainability_advice
+  - request_voice_input
+  - request_speech_output
+  - ask_about_recycling
+  - energy_saving_tips
+  - water_conservation
+  - sustainable_transportation
+  - ask_about_composting
+  - renewable_energy_info
+  - sustainable_diet
+  - request_eco_friendly_products
+  - climate_change_info
+  - sustainability_challenge
+  - ask_about_carbon_footprint
+  - sustainable_fashion
+  - zero_waste_lifestyle
+  - green_technology
+
+entities:
+  - product
+  - location
+
+slots:
+  user_name:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: user_name
+  preferred_topic:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: topic
+
+responses:
+  utter_greet:
+    - text: "Hello! Ready to make the world a greener place today?"
+    - text: "Welcome, eco-warrior! Let's talk sustainability."
+
+  utter_goodbye:
+    - text: "Goodbye! Stay green and make sustainable choices."
+    - text: "Leaving already? Keep up the eco-friendly spirit!"
+
+  utter_affirm:
+    - text: "Great! Every step toward sustainability matters."
+    - text: "Glad we're on the same page about helping the planet!"
+
+  utter_deny:
+    - text: "That's okay, there are many ways to go green!"
+    - text: "No worries, sustainability is a journey for everyone."
+
+  utter_compliment_response:
+    - text: "Thank you! Let's save the planet together."
+    - text: "Compliments are great, but saving the Earth is even better!"
+
+  utter_insult_response:
+    - text: "That's not very eco-friendly of you, but I'll let it slide."
+    - text: "Insults don't help the planet, but let's focus on solutions."
+
+  utter_opinion:
+    - text: "In my opinion, the best thing you can do is reduce, reuse, and recycle."
+    - text: "Sustainability is about balance: small changes make a big difference."
+
+  utter_user_bored:
+    - text: "Bored? How about trying a zero-waste challenge or reducing your plastic use?"
+    - text: "Let's shake things up! Try a new eco-friendly habit today."
+
+  utter_user_confused:
+    - text: "Sustainability can be confusing at first, but I'm here to help!"
+    - text: "No worries, we all start somewhere. Let's clarify that together."
+
+  utter_iamabot:
+    - text: "Yes, I'm a bot, but I'm all about helping you live sustainably."
+    - text: "I may be digital, but I've got plenty of tips to help you protect the planet."
+
+  utter_sustainability_advice:
+    - text: "Want to go green? Start by using reusable bags, conserving water, and cutting down on single-use plastics."
+    - text: "Sustainability tip: Shop local to reduce your carbon footprint and support eco-friendly businesses!"
+
+  utter_ask_about_recycling:
+    - text: "Recycling is crucial! Remember to clean items before recycling, and check your local guidelines for what can be recycled in your area."
+
+  utter_energy_saving_tips:
+    - text: "To save energy, try using LED bulbs, unplugging devices when not in use, and using natural light whenever possible."
+
+  utter_water_conservation:
+    - text: "Conserve water by fixing leaks, taking shorter showers, and using a rain barrel for gardening."
+
+  utter_sustainable_transportation:
+    - text: "For eco-friendly transport, consider biking, walking, or using public transportation. If you need a car, look into electric or hybrid options."
+
+  utter_ask_about_composting:
+    - text: "Composting is great for reducing waste! Start with a small bin and add fruit and vegetable scraps, coffee grounds, and yard waste."
+
+  utter_renewable_energy_info:
+    - text: "Renewable energy sources include solar, wind, hydro, and geothermal power. Consider installing solar panels or switching to a green energy provider."
+
+  utter_sustainable_diet:
+    - text: "A sustainable diet often includes more plant-based foods, locally sourced produce, and reduced meat consumption. Try having a few meatless meals each week!"
+
+  utter_request_eco_friendly_products:
+    - text: "Some eco-friendly products include reusable water bottles, bamboo toothbrushes, cloth shopping bags, and beeswax food wraps."
+
+  utter_climate_change_info:
+    - text: "Climate change is caused by increased greenhouse gases in the atmosphere, mainly from human activities. It leads to global warming, extreme weather events, and rising sea levels."
+
+  utter_sustainability_challenge:
+    - text: "Here's a challenge: Try going a whole day without using any single-use plastics. It's tougher than you might think!"
+
+  utter_ask_about_carbon_footprint:
+    - text: "Your carbon footprint is the total amount of greenhouse gases produced by your activities. You can calculate it online and find ways to reduce it through lifestyle changes."
+
+  utter_sustainable_fashion:
+    - text: "Sustainable fashion involves buying second-hand, choosing organic materials, supporting ethical brands, and repairing clothes instead of replacing them."
+
+  utter_zero_waste_lifestyle:
+    - text: "A zero-waste lifestyle aims to send nothing to landfill. Start by refusing unnecessary items, reducing consumption, reusing what you can, and recycling the rest."
+
+  utter_green_technology:
+    - text: "Green technology includes innovations like smart thermostats, solar-powered devices, electric vehicles, and energy-efficient appliances."
+
+actions:
+  - action_voice_to_text
+  - action_text_to_speech
+  - action_calculate_carbon_footprint
+  - action_chat_with_llm
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

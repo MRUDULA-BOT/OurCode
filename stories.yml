@@ -1,0 +1,123 @@
+version: "3.1"
+stories:
+
+- story: greet and ask for sustainability advice
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_sustainability_advice
+  - action: utter_sustainability_advice
+  - intent: affirm
+  - action: utter_affirm
+
+- story: ask about recycling and composting
+  steps:
+  - intent: ask_about_recycling
+  - action: utter_ask_about_recycling
+  - intent: ask_about_composting
+  - action: utter_ask_about_composting
+  - intent: user_confused
+  - action: utter_user_confused
+  - intent: affirm
+  - action: utter_affirm
+
+- story: energy saving and water conservation
+  steps:
+  - intent: energy_saving_tips
+  - action: utter_energy_saving_tips
+  - intent: water_conservation
+  - action: utter_water_conservation
+  - intent: affirm
+  - action: utter_affirm
+
+- story: sustainable transportation and carbon footprint
+  steps:
+  - intent: sustainable_transportation
+  - action: utter_sustainable_transportation
+  - intent: ask_about_carbon_footprint
+  - action: utter_ask_about_carbon_footprint
+  - intent: request_eco_friendly_products
+  - action: utter_request_eco_friendly_products
+
+- story: renewable energy and climate change discussion
+  steps:
+  - intent: renewable_energy_info
+  - action: utter_renewable_energy_info
+  - intent: climate_change_info
+  - action: utter_climate_change_info
+  - intent: ask_bot_opinion
+  - action: utter_opinion
+
+- story: sustainable diet and zero waste lifestyle
+  steps:
+  - intent: sustainable_diet
+  - action: utter_sustainable_diet
+  - intent: zero_waste_lifestyle
+  - action: utter_zero_waste_lifestyle
+  - intent: sustainability_challenge
+  - action: utter_sustainability_challenge
+
+- story: sustainable fashion and green technology
+  steps:
+  - intent: sustainable_fashion
+  - action: utter_sustainable_fashion
+  - intent: green_technology
+  - action: utter_green_technology
+  - intent: compliment_bot
+  - action: utter_compliment_response
+
+- story: user bored and confused
+  steps:
+  - intent: user_bored
+  - action: utter_sustainability_challenge  # Changed from utter_user_bored to match the rule
+  - intent: user_confused
+  - action: utter_user_confused
+  - intent: sustainability_challenge
+  - action: utter_sustainability_challenge
+
+- story: bot challenge and goodbye
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: voice input and speech output request
+  steps:
+  - intent: request_voice_input
+  - action: action_voice_to_text
+  - intent: request_speech_output
+  - action: action_text_to_speech
+  - intent: affirm
+  - action: utter_affirm
+
+- story: insult and recovery
+  steps:
+  - intent: insult_bot
+  - action: utter_insult_response
+  - intent: ask_sustainability_advice
+  - action: utter_sustainability_advice
+  - intent: affirm
+  - action: utter_affirm
+
+- story: complex sustainability conversation
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_about_carbon_footprint
+  - action: utter_ask_about_carbon_footprint
+  - intent: sustainable_transportation
+  - action: utter_sustainable_transportation
+  - intent: energy_saving_tips
+  - action: utter_energy_saving_tips
+  - intent: sustainable_diet
+  - action: utter_sustainable_diet
+  - intent: compliment_bot
+  - action: utter_compliment_response
+  - intent: goodbye
+  - action: utter_goodbye
+  
+ - story: chat with LLM
+  steps:
+    - intent: greet
+    - action: action_chat_with_llm

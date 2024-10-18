@@ -1,0 +1,47 @@
+version: "3.1"
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: Respond to compliments
+  steps:
+  - intent: compliment_bot
+  - action: utter_compliment_response
+
+- rule: Handle insults gracefully
+  steps:
+  - intent: insult_bot
+  - action: utter_insult_response
+
+- rule: Provide sustainability advice when asked
+  steps:
+  - intent: ask_sustainability_advice
+  - action: utter_sustainability_advice
+
+- rule: Handle voice input requests
+  steps:
+  - intent: request_voice_input
+  - action: action_voice_to_text
+
+- rule: Handle speech output requests
+  steps:
+  - intent: request_speech_output
+  - action: action_text_to_speech
+
+- rule: Offer a sustainability challenge when user is bored
+  steps:
+  - intent: user_bored
+  - action: utter_sustainability_challenge
+
+- rule: Clarify when user is confused
+  steps:
+  - intent: user_confused
+  - action: utter_user_confused

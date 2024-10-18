@@ -1,0 +1,232 @@
+version: "3.1"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - good morning
+    - good evening
+    - hey there
+    - hi there
+    - greetings
+    - sup
+    - what's up
+
+- intent: goodbye
+  examples: |
+    - bye
+    - goodbye
+    - see you around
+    - see you later
+    - catch you later
+    - have a good one
+    - until next time
+    - take care
+
+- intent: affirm
+  examples: |
+    - yes
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - sure
+    - absolutely
+    - you bet
+    - I agree
+
+- intent: deny
+  examples: |
+    - no
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - nope
+    - disagree
+
+- intent: compliment_bot
+  examples: |
+    - you're really helpful
+    - thanks, you're great
+    - you're so smart
+    - I appreciate your help
+    - you're awesome
+    - you're doing a great job
+
+- intent: insult_bot
+  examples: |
+    - you're useless
+    - you don't understand anything
+    - you're so dumb
+    - what a stupid bot
+    - you're not helpful at all
+
+- intent: ask_bot_opinion
+  examples: |
+    - what do you think about climate change?
+    - what's your opinion on renewable energy?
+    - how do you feel about plastic pollution?
+    - what are your thoughts on sustainable living?
+
+- intent: user_bored
+  examples: |
+    - I'm bored
+    - this is boring
+    - can we talk about something else?
+    - I need something interesting to do
+    - give me an exciting task
+
+- intent: user_confused
+  examples: |
+    - I don't understand
+    - can you explain that again?
+    - I'm lost
+    - that doesn't make sense
+    - I'm not following
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - are you real?
+    - what are you?
+
+- intent: ask_sustainability_advice
+  examples: |
+    - how can I be more sustainable?
+    - give me some eco-friendly tips
+    - what are some ways to help the environment?
+    - how can I reduce my environmental impact?
+    - sustainable living advice
+
+- intent: request_voice_input
+  examples: |
+    - I want to speak to you
+    - can you listen to me?
+    - activate voice input
+    - let's use voice chat
+    - switch to voice mode
+
+- intent: request_speech_output
+  examples: |
+    - can you speak to me?
+    - I want to hear your response
+    - use text-to-speech
+    - talk to me
+    - activate voice output
+
+- intent: ask_about_recycling
+  examples: |
+    - how do I recycle properly?
+    - what items can be recycled?
+    - tell me about recycling
+    - recycling guidelines
+    - where can I recycle?
+
+- intent: energy_saving_tips
+  examples: |
+    - how can I save energy?
+    - give me some energy-saving tips
+    - ways to reduce electricity usage
+    - how to lower my energy bills
+    - efficient energy use at home
+
+- intent: water_conservation
+  examples: |
+    - how can I save water?
+    - water conservation methods
+    - tips for reducing water usage
+    - ways to preserve water
+    - efficient water use
+
+- intent: sustainable_transportation
+  examples: |
+    - what are eco-friendly transportation options?
+    - how can I reduce my carbon emissions when traveling?
+    - tell me about sustainable commuting
+    - green transportation alternatives
+    - environmentally friendly ways to travel
+
+- intent: ask_about_composting
+  examples: |
+    - how do I start composting?
+    - what can be composted?
+    - benefits of composting
+    - composting tips for beginners
+    - is composting difficult?
+
+- intent: renewable_energy_info
+  examples: |
+    - tell me about renewable energy
+    - what are the types of clean energy?
+    - how can I switch to renewable energy?
+    - benefits of solar power
+    - wind energy explained
+
+- intent: sustainable_diet
+  examples: |
+    - how can I eat more sustainably?
+    - what is a plant-based diet?
+    - environmental impact of meat consumption
+    - sustainable food choices
+    - eco-friendly eating habits
+
+- intent: request_eco_friendly_products
+  examples: |
+    - what are some eco-friendly products?
+    - recommend sustainable alternatives
+    - green product suggestions
+    - environmentally friendly brands
+    - where can I buy sustainable products?
+
+- intent: climate_change_info
+  examples: |
+    - what is climate change?
+    - how does global warming affect us?
+    - causes of climate change
+    - ways to combat global warming
+    - climate change impacts
+
+- intent: sustainability_challenge
+  examples: |
+    - give me a sustainability challenge
+    - what's one thing I can do today to be more eco-friendly?
+    - daily green habit suggestion
+    - sustainability action item
+    - challenge me to be more sustainable
+
+- intent: ask_about_carbon_footprint
+  examples: |
+    - what is a carbon footprint?
+    - how do I calculate my carbon footprint?
+    - ways to reduce my carbon footprint
+    - impact of my lifestyle on the environment
+    - carbon footprint of different activities
+
+- intent: sustainable_fashion
+  examples: |
+    - what is sustainable fashion?
+    - how can I make my wardrobe more eco-friendly?
+    - tell me about ethical clothing brands
+    - fast fashion environmental impact
+    - sustainable textiles and materials
+
+- intent: zero_waste_lifestyle
+  examples: |
+    - how to live a zero-waste lifestyle?
+    - tips for reducing household waste
+    - what is a zero-waste challenge?
+    - alternatives to single-use products
+    - zero waste shopping tips
+
+- intent: green_technology
+  examples: |
+    - what are some examples of green technology?
+    - how is technology helping sustainability?
+    - innovations in environmental protection
+    - smart home devices for energy efficiency
+    - eco-friendly gadgets
